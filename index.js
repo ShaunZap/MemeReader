@@ -1,10 +1,14 @@
+// 
+document.addEventListener('DOMContentLoaded', function () {
+    getMeme();
+});
 
 //Innercontainer to hold all new image element
 const mainContainer = document.getElementById("imageContainer");
 const innerContainer = document.createElement("div");
 mainContainer.appendChild(innerContainer);
 innerContainer.className = "innerContainer";
-console.log(mainContainer);
+// console.log(mainContainer);
 
 
 //array to add unique image urls
@@ -13,7 +17,7 @@ const uniqueUrls = [];
 async function getMeme(){
     
     let currentOption = document.getElementById("selectMemes").value;
-    console.log(currentOption);
+    // console.log(currentOption);
     // Clear previous content
     innerContainer.innerHTML = '';
     // Reset uniqueImageUrls set
@@ -22,8 +26,8 @@ async function getMeme(){
     for(let imageCount=1; imageCount<=3;imageCount++){   
     let response = await fetch(`https://meme-api.com/${currentOption}`);
     let data = await response.json();
-    console.log(data);
-    console.log(data.url);
+    // console.log(data);
+    // console.log(data.url);
     let newImageUrl = data.url;
     let author = data.author;
     let title = data.title;
