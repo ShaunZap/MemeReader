@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meme Reader</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fruktur&family=Sedgwick+Ave+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
-</head>
-<body>
-    <h1>MemeMirthquake</h1>
-    <div class="container">
-        <select name="selectmemes" id="selectMemes">
-            <option value="gimme/memes" selected>Random</option>
-            <option value="gimme/dankmemes">Dank Memes</option>
-            <option value="gimme/AdviceAnimals">Advice Animals</option>
-            <option value="gimme/animefunny">Anime</option>
-            <option value="gimme/wholesomememes">Wholesome</option>
-            <option value="gimme/MemeEconomy">Economy</option>
-            <option value="gimme/ComedyCemetery">Comedy Cemetry</option>
-            <option value="gimme/PrequelMemes">Prequel</option>
-            <option value="gimme/terriblefacebookmemes">Facebook Memes</option>
-            <option value="gimme/funny">Funny</option>
-            <option value="gimme/okbuddyretard">Retarded</option>
-            <option value="gimme/historymemes">History</option>
-            <option value="gimme/IndianDankMemes">Indian</option>
-            <option value="gimme/DadJokes">Dad Jokes</option>
-        </select>
-        <button onclick="getMeme()">Get Memes</button>
-    </div>
+  </head>
+  <body>
+    <div id="title">MemeMirthquake</div>
     <div class="caution">
-        <p id="cautionContent">
-            Hey there, meme enthusiast! Our collection is diverse, and we love bringing you a mix of humor. 
-            However, some memes might come with a bit of spice or edge. 🌶️ For those who prefer a lighthearted 
-            experience, we recommend steering clear of certain categories that could be a tad spicy or offbeat.
-        </p>
+      <p id="cautionContent">
+        Hey there, meme enthusiast! Our collection is diverse, and we love
+        bringing you a mix of humor. However, some memes might come with a bit
+        of spice or edge. 🌶️ For those who prefer a lighthearted experience, we
+        recommend steering clear of certain categories that could be a tad spicy
+        or offbeat.
+      </p>
     </div>
+    <div class="container">
+      <select name="selectmemes" id="selectMemes">
+        <option value="gimme/memes" selected>Random</option>
+        <option value="gimme/dankmemes">Dank Memes</option>
+        <option value="gimme/AdviceAnimals">Advice Animals</option>
+        <option value="gimme/animefunny">Anime</option>
+        <option value="gimme/wholesomememes">Wholesome</option>
+        <option value="gimme/MemeEconomy">Economy</option>
+        <option value="gimme/ComedyCemetery">Comedy Cemetry</option>
+        <option value="gimme/PrequelMemes">Prequel</option>
+        <option value="gimme/terriblefacebookmemes">Facebook Memes</option>
+        <option value="gimme/funny">Funny</option>
+        <option value="gimme/okbuddyretard">Retarded</option>
+        <option value="gimme/historymemes">History</option>
+        <option value="gimme/IndianDankMemes">Indian</option>
+        <option value="gimme/DadJokes">Dad Jokes</option>
+      </select>
+      <button onclick="getMeme()">Get Memes</button>
+    </div>
+
     <div id="imageContainer"></div>
-</body>
+  </body>
 </html>
